@@ -1,0 +1,13 @@
+[package]
+name = "download_file"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.99"
+async-compat = "0.2.5"
+kdam = { version = "0.6.3", features = ["template"] }
+macro_rules_attribute = "0.2.2"
+reqwest = "0.12.23"
+smol = "2.0.2"
+smol-macros = "0.1.1"
