@@ -26,7 +26,7 @@ async fn main() -> Result<()> {
         .unit("Mb")
         .bar_format(bar_format)
         .build()
-        .unwrap();
+        .map_err(|e| anyhow::anyhow!(e))?;
 
     // Main loop to obtain chunks iteratively
     while let Some(chunk) = response.chunk().await? {
